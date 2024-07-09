@@ -37,10 +37,10 @@ class PostgreSQLDatabase:
 
 #Volani
 # Přihlašovací údaje k databázi
-host = 'ep-sweet-thunder-a221r1bm.eu-central-1.pg.koyeb.app'  # Např. 'localhost'
+host = 'ep-white-band-a2h03cgc.eu-central-1.pg.koyeb.app'  # Např. 'localhost'
 port = '5432'
 username = 'koyeb-adm'  # Vaše uživatelské jméno
-password = 'XQc0HOTwa1Kl'  # Vaše heslo
+password = 'RmiEvoMz7a3s'  # Vaše heslo
 database = 'koyebdb'  # Název vaší databáze
 
 # Inicializace připojení k databázi
