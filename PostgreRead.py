@@ -4,8 +4,8 @@ import psycopg2
 db_params = {
     'dbname': 'koyebdb',
     'user': 'koyeb-adm',
-    'password': 'XQc0HOTwa1Kl',
-    'host': 'ep-sweet-thunder-a221r1bm.eu-central-1.pg.koyeb.app',
+    'password': 'RmiEvoMz7a3s',
+    'host': 'ep-white-band-a2h03cgc.eu-central-1.pg.koyeb.app',
     'port': 5432,
     'sslmode': 'require'
 }
@@ -14,7 +14,7 @@ conn = psycopg2.connect(**db_params)
 cur = conn.cursor()
 
 # Načtení celé tabulky
-cur.execute('SELECT * FROM test_table')
+cur.execute('SELECT * FROM objednavky')
 rows = cur.fetchall()
 
 # Zobrazení výsledků
