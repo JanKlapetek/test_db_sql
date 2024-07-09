@@ -4,8 +4,8 @@ import psycopg2
 db_params = {
     'dbname': 'koyebdb',
     'user': 'koyeb-adm',
-    'password': 'XQc0HOTwa1Kl',
-    'host': 'ep-sweet-thunder-a221r1bm.eu-central-1.pg.koyeb.app',
+    'password': 'RmiEvoMz7a3s',
+    'host': 'ep-white-band-a2h03cgc.eu-central-1.pg.koyeb.app',
     'port': 5432,
     'sslmode': 'require'
 }
