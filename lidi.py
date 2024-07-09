@@ -27,4 +27,6 @@ conn.commit()  # Uložení změn
 
 # Uzavření kurzoru a spojení
 cur.close()
+print('Kurzor byl uzavřen')
 conn.close()
+print('Spojení uzavřeno')
