@@ -23,7 +23,7 @@ for row in rows:
     print(row)
 
 conn.commit()  # Uložení změn
-print('01. Změny byly uloženy')
+print('\n01. Změny byly uloženy')
 # Uzavření kurzoru a spojení
 cur.close()
 print('02. Kurzor byl uzavřen')
