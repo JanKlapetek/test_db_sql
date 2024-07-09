@@ -23,10 +23,34 @@ cur.execute('''
     )
 ''')
 
-conn.commit()  # Uložení změn
+# Vytvoření tabulky
+cur.execute('''
+    CREATE TABLE IF NOT EXISTS lidi (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(100),
+        age INTEGER
+    )
+''')
 
+# Vložení dat
+lidi_data = [
+    ('Jan Novak', 34),
+    ('Petra Svobodova', 28),
+    ('Karel Dvorak', 45),
+    ('Martina Novakova', 30),
+    ('Lukas Polak', 25)
+]
+
+
+cur.executemany('''
+    INSERT INTO lidi (name, age) VALUES (%s, %s)
+''', lidi_data)
+
+
+conn.commit()  # Uložení změn
+print('01. Změny byly uloženy')
 # Uzavření kurzoru a spojení
 cur.close()
-print('Kurzor byl uzavřen')
+print('02. Kurzor byl uzavřen')
 conn.close()
-print('Spojení uzavřeno')
+print('03. Spojení uzavřeno')
